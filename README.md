@@ -1,5 +1,8 @@
 # Wabanex
 
+## API Structure
+[Structure](https://whimsical.com/wabanex-nlw-together-NbeEqKNaLuTi1tpq9qVuaR)
+
 To start your Phoenix server:
 
   * Install dependencies with `mix deps.get`
