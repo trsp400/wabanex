@@ -11,5 +11,17 @@ defmodule WabanexWeb.Schema.Types.Root do
 
       resolve &UserResolver.get/2
     end
+
+    field :get_users, type: :user do
+      resolve &UserResolver.getAll/2
+    end
+  end
+
+  object :root_mutation do
+    field :create_user, type: :user do
+      arg :input, non_null(:create_user_input)
+
+      resolve &UserResolver.create/2
+    end
   end
 end
